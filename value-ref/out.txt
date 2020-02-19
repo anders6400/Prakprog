@@ -1,0 +1,3 @@
+hello from print
+new string
+new string
