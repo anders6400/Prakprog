@@ -7,9 +7,17 @@ class constants{
 		
 		Console.WriteLine("What's your name?");
 		name = Console.ReadLine();
-		//Console.WriteLine(name);
-		Console.WriteLine("What's your age?");
+
+
+		if (!name.Any(char.IsDigit))
+			Console.WriteLine("What's your age?");
+		else
+		{
+			Console.WriteLine("Invalid argument");
+		}
+		
 		string userage = Console.ReadLine();
+			   	
 
 		try
 		{
@@ -25,7 +33,6 @@ class constants{
 			Console.WriteLine("Your input is not a number");
 		}	
 		
-			
 		
 		//Console.WriteLine(age);
 		//Console.WriteLine($"Hello {name} you don't look a day older than {age}");
