@@ -16,11 +16,8 @@ static Func<double,double> f = (x) => Log(x)/Sqrt(x);
 
 static Func<double,double> g = (x) => Exp(-Pow(x,2));
 
-static double log(double p){
-Func<double,double> h = delegate(double x){
-return Pow(Log(1/x),p);
-};
-}
+// Func<double,double,double> h = (x) => Pow(Log(1/x),p);
+
 static int Main(){
 
         const double inf=System.Double.PositiveInfinity;
@@ -32,6 +29,8 @@ static int Main(){
         double c=ninf, d=inf,result1;
         result1=quad.o8av(g,c,d);
         WriteLine(result1);
+        // double result2;
+        // result2 = quad.o8av(h,a,b);
 
     return 0;
 }
