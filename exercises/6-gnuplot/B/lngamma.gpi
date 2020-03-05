@@ -1,0 +1,17 @@
+set term svg background rgb "white"
+set out "lngamma.svg"
+set xlabel "x" font ",18"
+set ylabel "y" font ",18"
+set key bottom right
+set tics out
+set key font ",18"
+set xtics font "Verdana,18"
+set ytics font "Verdana,18"
+set xzeroaxis
+set yzeroaxis
+set title "Logarithm of the gamma function" font ",18"
+set grid
+set log x
+set log y
+plot [][] \
+"out_lngamma.txt" with lines title "lngamma(x)"

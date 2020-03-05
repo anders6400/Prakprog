@@ -1,0 +1,26 @@
+set term svg background rgb "white"
+set out "complexgamma.svg"
+set xlabel "Re(z)" font ",18"
+set ylabel "Im(z)" font ",18"
+set view 60,340,1,1
+set key bottom right
+set tics out
+set key font ",18"
+set xtics font "Verdana,14"
+set ytics font "Verdana,14"
+set ztics font "Verdana,14"
+set xzeroaxis
+set yzeroaxis
+set hidden3d
+set pm3d
+set contour both
+set cntrlabel onecolor
+set linetype 1 linecolor rgb "black"
+zmax=6
+set cntrparam levels incremental 0.0,0.25,zmax
+set palette rgb 34,13,10
+cut(z)=z>zmax?zmax:z
+set title "Absolute complex gamma function" font ",18"
+set grid
+splot [][][:zmax]\
+"out_complexgamma.txt" using 1:2:(cut($3)) with lines notitle
