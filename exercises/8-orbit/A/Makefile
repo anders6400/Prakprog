@@ -9,7 +9,7 @@ out.txt: Exercise_A.exe
 Exercise_A.exe: Exercise_A.cs matlib.dll
 	mcs $< -reference:matlib.dll
 
-matlib.dll: ../matlib/matrix/vector.cs ../matlib/ode/ode.cs
+matlib.dll: ../../matlib/matrix/vector.cs ../../matlib/ode/ode.cs
 	mcs -target:library -out:$@ $^
 
 clean:
