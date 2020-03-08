@@ -1,0 +1,10 @@
+set term cairolatex input size 9cm,6cm
+set out "plot-erf.tex"
+set xlabel "$x$"
+set ylabel "erf$(x)$"
+set tics out
+set key bottom right
+set title "Error function" font ",18"
+plot [-3:3][-1.2:1.2] \
+"out-erf.txt" with lines title "Error function" \
+,"table-erf.txt" with points pt 7 title "Tabulated values"

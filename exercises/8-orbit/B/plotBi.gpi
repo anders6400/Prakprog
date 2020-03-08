@@ -1,0 +1,6 @@
+set term svg background rgb "white"
+set out "plotBiii.svg"
+set tics out
+set key bottom right
+set title "Planetary orbit (with correction)" font ",18"
+plot "outi.txt" using (1/$2)*sin($1):(1/$2)*cos($1) w l notitle
