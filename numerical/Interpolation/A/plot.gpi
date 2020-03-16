@@ -1,0 +1,15 @@
+set term svg background rgb "white"
+set out "plot_linspline.svg"
+set xlabel "$x$" font ",16"
+set ylabel "$Sin(x)$" font ",16"
+set key bottom right
+set tics out
+set xzeroaxis
+set yzeroaxis
+set title "Linear spline of sine of x" font ",20"
+plot "out_dataA.txt" u 1:2 title "Sine" \
+	with points pt 7 \
+	, "out_splined_data.txt" u 1:2 title "LinSpline" w l \
+	, "out_splined_data.txt" u 1:3 title "Integral" w l
+
+

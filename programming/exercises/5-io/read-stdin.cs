@@ -20,7 +20,4 @@ class stdin{
 
 	return 0;
 	}
-		
-
-
 }
