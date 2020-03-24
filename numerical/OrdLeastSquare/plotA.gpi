@@ -1,0 +1,11 @@
+set term svg background rgb "white"
+set out "plotA.svg"
+set xlabel "Time in days" font ",16"
+set ylabel "Relative Activity" font ",16"
+set key top right
+set tics out
+set xzeroaxis
+set yzeroaxis
+set title "Rutherford and Soddy Experiment" font ",20"
+plot "results.txt" u 1:2 title "Exponetial fit" w l \
+    ,"data.txt" title "Data" w yerr pt 7 ps 0.6 
