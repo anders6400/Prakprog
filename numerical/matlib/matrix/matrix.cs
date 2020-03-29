@@ -184,6 +184,12 @@ public void print(string s){
 		}
 	}
 
+public static void scale(matrix M,double x){
+	for(int j=0;j<M.size2;j++)
+	for(int i=0;i<M.size1;i++)
+		M[i,j]*=x;
+	}
+
 public static bool double_equal(double a, double b, double eps=1e-6){
 	if(System.Math.Abs(a-b)<eps)return true;
 	if(Math.Abs(a-b)/(Math.Abs(a)+Math.Abs(b)) < eps/2)return true;

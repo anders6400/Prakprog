@@ -1,0 +1,49 @@
+---------Problem A1----------
+
+Testing that the Jacobi algorithm works as intended:
+
+Random square matrix A:
+    3.744     0.000     0.000     0.000     0.000 
+    3.665     3.771     0.000     0.000     0.000 
+    5.732     5.613     6.057     0.000     0.000 
+    0.331     5.613     3.805     9.545     0.000 
+    7.181     4.389     6.342     4.948     6.891 
+
+Eigenvalue decomposition of A=V*D*V^T:
+
+D = V^T*A*V = 
+   -3.120     0.000     0.000     0.000     0.000 
+    0.000    -1.298     0.000     0.000     0.000 
+    0.000     0.000     1.060     0.000     0.000 
+    0.000     0.000     0.000     7.933     0.000 
+    0.000     0.000     0.000     0.000    25.433 
+
+Listed eigenvalues:	-3.120 -1.298 1.060 7.933 25.433 
+
+Number of sweeps required to diagonalize A: 5
+
+---------Problem A2----------
+
+Now solving for a particle in a box.
+
+The dimensions of the soon to be diagonalized Hamiltonian is 50x50
+
+Comparison of the calculated eigenvalues and the exact:
+
+n Calculated     Exact:
+0 9.8665	 9.8696
+1 39.4285	 39.4784
+2 88.5739	 88.8264
+3 157.1163	 157.9137
+4 244.7957	 246.7401
+5 351.2795	 355.3058
+6 476.1637	 483.6106
+7 618.9746	 631.6547
+8 779.1705	 799.4380
+9 956.1437	 986.9604
+10 1149.2229	 1194.2221
+11 1357.6756	 1421.2230
+12 1580.7112	 1667.9631
+13 1817.4836	 1934.4425
+14 2067.0946	 2220.6610
+15 2328.5974	 2526.6187
