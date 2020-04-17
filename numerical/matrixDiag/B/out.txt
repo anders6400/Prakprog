@@ -1,0 +1,3 @@
+Problem B1:
+Checking that the Jacobi cycle method  scales as O(n^3) by plotting the timer values as a function of matrix dimension.
+A plot of this can be seen in plotB1.svg

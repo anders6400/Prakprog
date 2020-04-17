@@ -1,0 +1,8 @@
+set term svg enhanced size 740,480 background rgb "white" font ",16"
+set out "plotB1.svg"
+set xlabel "log(n)"
+set ylabel "log(timer)"
+set key out
+set title "Timer for Jacobi row method"
+plot "out.dataB1.txt" u 1:2 with points title "Data"
+

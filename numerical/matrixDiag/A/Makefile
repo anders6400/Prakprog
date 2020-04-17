@@ -10,10 +10,10 @@ main.exe: main.cs matlib.dll
 	mcs $(word 1, $^) -reference:matlib.dll -out:$@ 
 
 
-LIBDIR = ../matlib
+LIBDIR = ../../matlib
 SRC = $(LIBDIR)/matrix/matrix.cs
 SRC += $(LIBDIR)/matrix/vector.cs
-SRC += ../LinEquations/QRdecomp.cs
+SRC += ../../LinEquations/QRdecomp.cs
 SRC += jacobiAlg.cs
 SRC += Hamiltonian.cs
 
