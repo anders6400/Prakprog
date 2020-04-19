@@ -1,0 +1,9 @@
+set term svg enhanced size 740,480 background rgb "white" font ",18"
+set out "plotA_rk45.svg"
+set xlabel "x" font ",16"
+set ylabel "f(x)" font ",16"
+set key top right font ",14"
+set grid
+set title "Sine function - RK45"
+plot "out.rk45.txt" u 1:2 w p pt 7 title "Numerical solution" \
+, sin(x) dashtype 2 lw 4 title "Analytical solution"
