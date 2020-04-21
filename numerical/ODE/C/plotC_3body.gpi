@@ -1,0 +1,10 @@
+set term svg enhanced size 1000,800 background rgb "white" font ",18"
+set out "plotC_3body.svg"
+set xlabel "x" font ",16"
+set ylabel "y" font ",16"
+set key top right font ",14"
+set grid
+set title "Special stable-case solution - 3-body problem"
+plot "outC.data.txt" u 2:3 w l lw 12 lc 3 title "Body 1" \
+    ,"outC.data.txt" u 4:5 w l lw 5 lc 7 title "Body 2" \
+    ,"outC.data.txt" u 6:7 w l lw 2 lc 10 title "Body 3"
