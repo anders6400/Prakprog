@@ -9,7 +9,9 @@ main.exe: main.cs matlib.dll
 LIBDIR = ../../matlib
 SRC = $(LIBDIR)/matrix/matrix.cs
 SRC += $(LIBDIR)/matrix/vector.cs
-SRC += quad.cs
+SRC += $(LIBDIR)/QRdecomp.cs
+SRC += newton.cs
+
 
 matlib.dll : $(SRC)
 	mcs -target:library -out:$@ $^

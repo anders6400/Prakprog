@@ -31,6 +31,15 @@ public void print(string s="",string format="{0,10:g3} "){
 	System.Console.Write("\n");
 }
 
+public string toString(){
+	string resString = "";
+	for(int i =0; i< size; i++) {
+		if(i==size-1) return resString += $"{this[i]})";
+		else resString += $"({this[i]}, ";
+	}
+	return resString;
+}
+
 public static vector operator+(vector v, vector u){
 	vector r=new vector(v.size);
 	for(int i=0;i<r.size;i++)r[i]=v[i]+u[i];

@@ -3,7 +3,7 @@ using static System.Console;
 using static System.Math;
 using static System.Double;
 
-public class quad{
+public static partial class quad{
     public static double adapt4(Func<double,double> f, double a, double b,
                     double acc=1e-3, double eps=1e-3, int limit=99, double f2 = NaN, double f3 = NaN){
     double dx = b-a;

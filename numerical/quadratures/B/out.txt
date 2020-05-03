@@ -1,0 +1,64 @@
+Problem B:
+
+Integrating the function 1/Sqrt(x) from 0 to 1: 
+
+Result from adapt4:     1.99999101365726
+Analytical result:      2
+Deviation:              8.98634273838184E-06
+Allowed tolerance:      0.0003
+Number of evaluations:  1180
+Tolerance not exceeded, test passed!
+
+With the Clenshaw-Curtis transformation:
+
+Result from adapt4CC:   1.99999950243225
+Analytical result:      2
+Deviation:              4.97567753887651E-07
+Allowed tolerance:      0.0003
+Number of evaluations:  32
+Tolerance not exceeded, test passed!
+
+Integrating the function Log(x)/Sqrt(x) from 0 to 1: 
+
+Result from adapt4:     -3.9999943994402
+Analytical result:      -4
+Deviation:              5.60055980081131E-06
+Allowed tolerance:      0.0005
+Number of evaluations:  1956
+Tolerance not exceeded, test passed!
+
+With the Clenshaw-Curtis transformation:
+
+Result from adapt4CC:   -3.99999468436801
+Analytical result:      -4
+Deviation:              5.3156319914649E-06
+Allowed tolerance:      0.0005
+Number of evaluations:  200
+Tolerance not exceeded, test passed!
+
+Integrating the function 4*Sqrt(1-x^2) from 0 to 1: 
+
+Result from adapt4:     3.14160510317001
+Analytical result:      3.14159265358979
+Deviation:              1.24495802196201E-05
+Allowed tolerance:      0.000414159265358979
+Number of evaluations:  64
+Tolerance not exceeded, test passed!
+
+With the Clenshaw-Curtis transformation:
+
+Result from adapt4CC:   3.14159239398765
+Analytical result:      3.14159265358979
+Deviation:              2.59602147334448E-07
+Allowed tolerance:      0.000414159265358979
+Number of evaluations:  96
+Tolerance not exceeded, test passed!
+
+Comparison to the matlib o8av routine:
+
+Result from o8av:       3.14158836545417
+Analytical result:      3.14159265358979
+Deviation:              4.28813562525221E-06
+Allowed tolerance:      0.000414159265358979
+Number of evaluations:  16
+Tolerance not exceeded, test passed!

@@ -1,0 +1,8 @@
+Problem B:
+
+Trying to find the lowest root of the equation M(epsilon) in the vicinity of v_0 = -1
+Accuracy:               1E-05
+Analytical result:      -0.5
+Numerical result:       -0.499974537154247
+Deviation:              2.54628457533879E-05
+Number of evaluations:  25

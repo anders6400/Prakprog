@@ -1,0 +1,17 @@
+Problem A:
+
+Integrating the function Sqrt(x) from 0 to 1: 
+
+Result from adapt4:     0.666667503796937
+Analytical result:      0.666666666666667
+Deviation:              8.37130270658903E-07
+Allowed tolerance:      1.66666666666667E-05
+Tolerance not exceeded, test passed!
+
+Integrating the function 4*Sqrt(1-x^2) from 0 to 1: 
+
+Result from adapt4:     3.14159317014955
+Analytical result:      3.14159265358979
+Deviation:              5.16559761187807E-07
+Allowed tolerance:      4.14159265358979E-05
+Tolerance not exceeded, test passed!

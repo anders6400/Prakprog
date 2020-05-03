@@ -10,6 +10,8 @@ LIBDIR = ../../matlib
 SRC = $(LIBDIR)/matrix/matrix.cs
 SRC += $(LIBDIR)/matrix/vector.cs
 SRC += quad.cs
+SRC += clenshaw_curtis.cs
+SRC += quado8.cs
 
 matlib.dll : $(SRC)
 	mcs -target:library -out:$@ $^

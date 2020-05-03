@@ -1,0 +1,15 @@
+Problem A:
+
+Trying to find the first root of Cos(x) in the vicinity of x_0 = 1
+Accuracy:               0.0001
+Analytical result:      1.5707963267949
+Numerical result:       1.57079632679542
+Deviation:              5.19806420129498E-13
+Number of evaluations:  10
+
+Trying to find the first extremum of the Rosenbrock function in the vicinity of z_0 = (0.5, 1.5)
+Accuracy:               1E-05
+Analytical result:      (1, 1)
+Numerical result:       (0.999999740416333, 0.999999476367428)
+Deviation:              (-2.59583667339136E-07, -5.23632571969301E-07)
+Number of evaluations:  1538
