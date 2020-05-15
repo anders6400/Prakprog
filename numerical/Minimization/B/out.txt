@@ -1,0 +1,7 @@
+Problem B:
+
+Minimization of Higgs data with Breit-Wigner fit:
+Accuracy:               0.001
+Mass:                   125.972
+Width:                  2.086
+# of evaluations:       1592

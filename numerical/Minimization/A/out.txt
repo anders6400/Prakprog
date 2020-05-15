@@ -1,0 +1,21 @@
+Problem A1:
+Rosenbrock's valley function
+
+Minimization of Rosenbrock's valley function:
+Start value:            (0, 0)
+Accuracy:               1E-07
+Minimum:                (0.999969850353927, 0.999939643573999)
+Analytical minimum:     (1, 1)
+Deviation:              (-3.01496460731743E-05, -6.03564260011069E-05)
+Number of evaluations:  372
+
+Problem A2:
+Himmelblau's function
+
+Minimization of Himmelblau's function:
+Start value:            (1, 1)
+Accuracy:               1E-07
+Minimum:                (2.99999986546561, 2.00000032078644)
+Analytical minimum:     (3, 2)
+Deviation:              (-1.34534387186136E-07, 3.207864369692E-07)
+Number of evaluations:  55

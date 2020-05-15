@@ -1,0 +1,12 @@
+set term svg size 1000,800 background rgb "white" font ",18"
+set out "plotB.svg"
+set xlabel "N" font ",18"
+set ylabel ""
+set logscale y
+set key top right font ",18"
+set grid
+set title "Error of the Plain Monte Carlo method"
+plot "out.txt" u 1:2 with lines lw 4 title "Estimated error" \
+    , "out.txt" u 1:3 with points pt 7 ps 0.3 title "Actual error" \
+    , 1/sqrt(x) with lines lw 2 title "1/Sqrt(N)"
+    

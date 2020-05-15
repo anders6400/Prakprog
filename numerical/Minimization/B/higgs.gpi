@@ -1,0 +1,9 @@
+set term svg size 1000,800 background rgb "white" font ",18"
+set out "higgs.svg"
+set xlabel "Energy [GeV]" font ",18"
+set ylabel "sigma [certain units]" font ",18"
+set key top right font ",18"
+set grid
+set title "Breit-Wigner fit to Higgs data"
+plot "out.results.txt" w l lt 3 lw 3 title "Fit" \
+    ,"higgs.data" w errorbars lw 2 lt 2 pt 7 title "Data"
