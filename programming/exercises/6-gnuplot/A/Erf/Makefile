@@ -7,15 +7,12 @@ Erf.svg: erf.gpi out.erf.txt table.erf.txt
 out.erf.txt: main_erf.exe
 	mono $< >$@
 
-main_erf.exe: main_erf.cs matlib.dll
-	mcs $< -reference:matlib.dll
+main_erf.exe: main_erf.cs math.dll
+	mcs $< -reference:math.dll
 
 
-LIBDIR = ../Gamma
-SRC = $(LIBDIR)/gamma.cs
-
-matlib.dll: $(SRC)
-	mcs $< -target:library -out:$@
+math.dll : gamma.cs cmath.cs complex.cs
+	mcs gamma.cs cmath.cs complex.cs -target:library -out:$@
 
 clean:
 		rm -rf *.exe *.dll *.svg out*

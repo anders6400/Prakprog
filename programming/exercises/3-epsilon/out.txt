@@ -1,1 +1,12 @@
-True
+my max int = 2147483647
+My max val = 2147483647
+my min. int = -2147483648
+My min. val = -2147483648
+Epsilon machine double = 1.11022302462516E-16
+Epislon machine float = 5.960464E-08
+float_sum_up=15.40368
+float_sum_down=18.80792
+double_sum_up=21.3716310803036
+double_sum_down=21.3716310812321
+Check whether a=1 and b=1.00003 are equal with aboslute precision tau:
+False

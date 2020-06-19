@@ -4,9 +4,9 @@ CSFLAGS = -optimize+ -platform:arm
 all: out.txt
 	cat out.txt
 
-out.txt : main.exe
-	mono main.exe > out.txt
-main.exe : main.cs
-	mcs $(CSFLAGS) -out:main.exe main.cs
+out.txt : hello.exe
+	mono hello.exe > out.txt
+hello.exe : hello.cs
+	mcs $(CSFLAGS) -out:hello.exe hello.cs
 clean:
-	rm --force out.txt main.exe
+	rm --force out.txt hello.exe

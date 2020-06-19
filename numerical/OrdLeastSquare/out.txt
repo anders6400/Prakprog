@@ -2,7 +2,7 @@
 
 Calculating the relevant parameters for Least Squares Fit:
 
-c = 4.959 -0.171 
+c =       4.96     -0.171 
 
 The half-life time of ThX from my fit has been found to be: 
 
@@ -11,10 +11,10 @@ T_(1/2) = 4.04 days
 --------Problem B--------
 
 Covariance Matrix: 
-    0.001     0.000 
-    0.000     0.000 
+   0.00089  -8.75e-05 
+ -8.75e-05   1.25e-05 
 
-Uncertainty on fitting parameters = 0.030 0.004 
+Uncertainty on fitting parameters =     0.0298    0.00354 
 
 Calculating the half-life time of ThX with uncertainty: 
 

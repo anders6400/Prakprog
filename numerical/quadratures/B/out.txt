@@ -54,7 +54,7 @@ Allowed tolerance:      0.000414159265358979
 Number of evaluations:  96
 Tolerance not exceeded, test passed!
 
-Comparison to the matlib o8av routine:
+Comparison with the matlib o8av routine:
 
 Result from o8av:       3.14158836545417
 Analytical result:      3.14159265358979

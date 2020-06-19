@@ -11,8 +11,8 @@ out.gamma.txt : main_gamma.exe
 main_gamma.exe : main_gamma.cs math.dll
 	mcs $< -reference:math.dll
 
-math.dll : gamma.cs
-	mcs $< -target:library -out:$@
+math.dll : gamma.cs cmath.cs complex.cs
+	mcs gamma.cs cmath.cs complex.cs -target:library -out:$@
 
 table.gamma.txt: gamma.c
 	tcc -run $< > $@

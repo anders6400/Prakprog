@@ -1,0 +1,19 @@
+Bi-linear interpolation on a rectilinear grid in two dimensions
+
+The goal is to find the function value at a random point within our 2D grid
+The size of our 2D grid will be 10x10
+The functions defined on our grid is cos(x)*sin(y) and the Rosenbrock function
+
+The x and y coordinate that we want an interpolated value for is:
+x	=      3.43 
+y	=      6.81 
+
+Interpolated value z(x,y) for the cos(x)*sin(x):
+  -0.48444 
+Analytical result:
+z(x,y) = -0.48471
+
+Interpolated value z(x,y) for the Rosenbrock function:
+    2432.6 
+Analytical result:
+z(x,y) = 2429

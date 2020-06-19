@@ -4,7 +4,7 @@ class main{
 	static int Main(){
 		int i=0;
 		int max=int.MaxValue/2; 
-	/*	while(i+1>i) {i++;}
+		while(i+1>i) {i++;}
 		Write("my max int = {0}\n",i);
 		Write("My max val = "+int.MaxValue+"\n");
 
@@ -37,9 +37,10 @@ class main{
 		double double_sum_down=1d/max;
 		for(i=max-1;i>0;i--)double_sum_down+=1d/i;
 		Write("double_sum_down={0}\n",double_sum_down);
-	*/	
+		
 		double a=1;
-		double b=1;
+		double b=1.00003;
+		WriteLine("Check whether a=1 and b=1.00003 are equal with aboslute precision tau:");
 		bool Check = Comparison.approx(a,b);
 		Write(Check+"\n");
 	return 0;

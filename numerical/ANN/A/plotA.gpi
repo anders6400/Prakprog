@@ -1,0 +1,10 @@
+set term svg size 1000,800 background rgb "white" font ",18"
+set out "plotA.svg"
+set xlabel "x" font ",18"
+set ylabel "y" font ",18"
+set key top left font ",18"
+set grid
+set title "Test of ANN"
+plot "out.data.txt" u 1:2 with points pt 7 ps 0.8 title "Predicted" \
+    , "out.txt" u 1:2 with lines lw 2 title "Function values of Cos(x)*Sqrt(x)" 
+    

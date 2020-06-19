@@ -6,14 +6,11 @@ lngamma.svg: lngamma.gpi out_lngamma.txt
 out_lngamma.txt: main_lngamma.exe
 	mono $< > $@
 
-main_lngamma.exe: main_lngamma.cs matlib.dll
-	mcs $< -reference:matlib.dll
+main_lngamma.exe: main_lngamma.cs math.dll
+	mcs $< -reference:math.dll
 
-LIBDIR = ../A/Gamma
-SRC = $(LIBDIR)/gamma.cs
-
-matlib.dll: $(SRC)
-	mcs $< -target:library -out:$@
+math.dll : gamma.cs cmath.cs complex.cs
+	mcs gamma.cs cmath.cs complex.cs -target:library -out:$@
 
 clean:
 		rm -rf *.exe out* *.svg *.dll
