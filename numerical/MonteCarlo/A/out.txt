@@ -2,19 +2,19 @@ Problem A:
 
 First a test on an easy integral:
 MC integral of Cos^2(x) from 0 to 3.14159265358979
-Numerical result:           1.5431707808522
+Numerical result:           1.57980007487282
 Analytical result:          1.5707963267949
-Estimated error:            0.0111009322242421
-Actual error:               0.0276255459426977
-Test Failed!
+Estimated error:            0.0110897765707878
+Actual error:               0.00900374807792281
+Test Passed!
 
 Moving on to a move advanced integral:
 MC integral of (1-cos(x)cos(y)cos(z))^(-1)
 Integration limits of each component:
 a =          0          0          0 
 b =       3.14       3.14       3.14 
-Numerical result:           1.36752122901146
+Numerical result:           1.38600149152375
 Analytical result:          1.3932038765174
-Estimated error:            0.0202920224433916
-Actual error:               0.0256826475059324
-Test Failed!
+Estimated error:            0.0221147545775471
+Actual error:               0.00720238499364223
+Test Passed!
